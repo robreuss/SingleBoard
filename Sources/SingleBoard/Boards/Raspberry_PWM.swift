@@ -41,8 +41,8 @@ class RaspberryPWM: BoardPWM {
         self.secureMem = secureMem
 
         self.channels = []
-        self.channels.append(RaspberryPWMChannel(channel: 0, controller: self, pins: [.p12, .p18]))
-        self.channels.append(RaspberryPWMChannel(channel: 1, controller: self, pins: [.p12, .p18]))
+        self.channels.append(RaspberryPWMChannel(channel: 0, controller: self, pins: [.p12, .p13]))
+        self.channels.append(RaspberryPWMChannel(channel: 1, controller: self, pins: [.p12, .p13]))
     }
 
     var count: Int { 
